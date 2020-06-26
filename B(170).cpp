@@ -2,27 +2,18 @@
 using namespace std;
 int main(){
 
-    int x,y;
-    cin>>x>>y;
-    int res1=x*2;
-    int res2=x*4;
-    if(y>=res1 && y<=res2){
-
-        if(y%2==0 || y%4==0){
-            cout<<"Yes"<<endl;
-        }
-        else{
-            cout<<"No"<<endl;
-        }
-
+    int n,m,sum=0;
+    cin>>n>>m;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
     }
-    else{
-        cout<<"No"<<endl;
+    sort(a,a+n);
+    for(int i=0;i<m;i++){
+        sum+=a[i];
     }
-
-
+    cout<<sum<<endl;
 
 
 
 }
-
