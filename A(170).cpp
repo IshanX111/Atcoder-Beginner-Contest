@@ -2,19 +2,15 @@
 using namespace std;
 int main(){
 
-    int a[5];
-    for(int i=0;i<5;i++){
-        cin>>a[i];
+    char ch;
+    cin>>ch;
+    if(ch>='A' && ch<='Z'){
+        cout<<"A"<<endl;
     }
 
-    for(int i=0;i<5;i++){
-        if(a[i]==0){
-            cout<<i+1<<endl;
-            break;
-        }
+    if(ch>='a' && ch<='z'){
+        cout<<"a"<<endl;
     }
-
-
 
 
 
